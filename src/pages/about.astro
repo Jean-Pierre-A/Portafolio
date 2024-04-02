@@ -1,0 +1,128 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="About | Jeanine White" description="About Jeanine White Lorem Ipsum">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="About"
+				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
+			>
+				<img
+					width="1553"
+					height="873"
+					src="/assets/at-work.jpg"
+					alt="Jean Pierre Graduation"
+				/>
+			</Hero>
+			<section>
+				<h2 class="section-title">Education</h2>
+				<div class="content">
+					<ul>
+						<li>Systems engineering - Universidad Pontificia Bolivariana 2019-2023</li>
+						<li>English B2 - Blendex 2018</li>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Background</h2>
+				<div class="content">
+					<ul>
+						<li>Internship - Direción de Impuestos Bancolombia -2022 <br>
+							Process Automation, Data Engineering, Application Development.
+						</li>
+						<li>
+							Analista III - Bancolombia - 2023 - Now <br>
+							Application Development, Web Development, Process improve.
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Courses</h2>
+				<div class="content">
+					<p><ul>
+						<li>Diplomado Full Stack - UPB - Now  </li>
+						<li>Introduction to AI - Platzi 2023</li>
+						<li>Análisis de Datos para Empresas - Udemy - 2023</li>
+						</ul></p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Skills</h2>
+				<div class="content">
+					<p><ul>
+						<li>Effective Communication</li>
+						<li>Problem-Solving and Critical Thinking</li>
+						<li>Teamwork and Collaboration</li>
+						<li>Adaptability and Flexibility</li>
+					</ul></p>
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
