@@ -1,22 +1,23 @@
-# Astro Starter Kit: Portfolio
+# Portafolio Jean Pierre 
 
+Portafolio Jean Pierre Agudelo
+
+Se desarrolla con el Framework Astro para Javascript
+
+Se toma desde una plantilla, se modifican todas las sección y se agregar y eliminan otras.
+
+Se hace el despliegue en Netifly.
+## Comando creación Plantilla 
 ```sh
 npm create astro@latest -- --template portfolio
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/portfolio)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/portfolio)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/portfolio/devcontainer.json)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🧞 Comandos NPM Astro
 
-![portfolio](https://user-images.githubusercontent.com/357379/210779178-a98f0fb7-6b1a-4068-894c-8e1403e26654.jpg)
+Desde una terminal:
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
+| Comando                   | Acción                                           |
 | :------------------------ | :----------------------------------------------- |
 | `npm install`             | Installs dependencies                            |
 | `npm run dev`             | Starts local dev server at `localhost:4321`      |
@@ -25,6 +26,6 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+## 👀 Documentación
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Feel free to check [ documentation](https://docs.astro.build) 
